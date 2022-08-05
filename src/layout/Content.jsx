@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Content = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-}
+  return (
+    <main className='flex-1 bg-purple-200'>
+      <h1>Content Component</h1>
+    </main>
+  );
+};
 
 export default Content;

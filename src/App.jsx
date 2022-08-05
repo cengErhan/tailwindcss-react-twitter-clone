@@ -1,16 +1,22 @@
 import { useState } from 'react';
 import Container from './layout/Container';
+import Sidebar from './layout/Sidebar';
+import Content from './layout/Content';
+import Widgets from './layout/Widgets';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
       <Container>
-        <div className='w-72 bg-blue-200'>Sidebar</div>
-        <main className='flex-1 bg-purple-200 '>Feed</main>
-        <aside className='bg-green-200 w-80'>Timeline</aside>
+        <Sidebar/>
+        <Content/>
+        <Widgets/>
       </Container>
   );
 }
 
 export default App;
+
+
+
